@@ -1,0 +1,8 @@
+version: '2.1'
+orbs:
+  grafana: grafana/k6@1.1.3
+workflows:
+  load_test:
+    jobs:
+      - grafana/k6:
+          script: tasks.js
